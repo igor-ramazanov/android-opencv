@@ -1,0 +1,16 @@
+
+{
+	"buildFiles" : [ "/Users/igorramazanov/projects/android-opencv/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"/Users/igorramazanov/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/igorramazanov/projects/android-opencv/app/.externalNativeBuild/cmake/debug/x86_64 --target clean"
+	],
+	"toolchains" : 
+	{
+		"11210051300117981929" : 
+		{
+			"cCompilerExecutable" : "/Users/igorramazanov/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/igorramazanov/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}

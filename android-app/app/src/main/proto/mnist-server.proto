@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package com.themirrortruth.mnist;
+
+service MnistServer {
+    rpc Classify (Features) returns (PredictedDigit) {
+    }
+}
+
+message Features {
+    repeated int32 pixels = 1;
+}
+
+message PredictedDigit {
+    int32 digit = 1;
+}
