@@ -10,9 +10,11 @@ import scala.concurrent.{ExecutionContext, Future}
 class Server(network: MultiLayerNetwork) extends MnistServer {
   override def classify(request: Features): Future[PredictedDigit] = {
     Future {
-      val array = request.pixels.map(n => {
-        (0x00 << 24 | n.toByte & 0xff).toDouble / 255.0
-      }).toArray
+      val array = request.pixels
+        .map(n => {
+          (0x00 << 24 | n.toByte & 0xff).toDouble / 255.0
+        })
+        .toArray
       val iNDArray = Nd4j.create(array)
       val results = network.predict(iNDArray)
       println("Predicted: " + results.mkString(", "))

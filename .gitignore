@@ -1,4 +1,8 @@
 *.iml
-.gradle/
-/build/
-/captures/
+android-app/.gradle/
+android-app/build/
+android-app/captures/
+mnist-server/project/project/
+mnist-server/project/target/
+mnist-server/res/
+mnist-server/target/
